@@ -1,0 +1,402 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0px solid silver;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 30px 0;
+}
+
+h2 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 550;
+    margin: 10px 0;
+}
+
+p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+article {
+    margin-top: 200px;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    line-height: 3rem;
+    border: 1px solid #dddddd;
+    margin: 5px 0;
+    padding: 0 5px;
+}
+
+/* start */
+
+.red-btn {
+    background: #d60815;
+    color: white;
+    font-weight: bold;
+}
+
+.red-btn:hover {
+    box-shadow: 1px 1px 4px #cccccc;
+    transition: 0.5s;
+}
+
+.black-btn {
+    background: #444444;
+    color: white;
+}
+
+.black-btn:hover {
+    background: black;
+    transition: 0.5s;
+}
+
+.white-btn {
+    background: none;
+    color: black;
+    width: 100%;
+    font-weight: bold;
+}
+
+.white-btn:hover {
+    box-shadow: 1px 1px 4px #cccccc;
+    transition: 0.5s;
+}
+
+.gray-btn {
+    background: #eeeeee;
+    color: black;
+    font-weight: bold;
+    padding: 0 40px;
+    border: 0px;
+}
+
+.gray-btn:hover {
+    transition: 0.5s;
+    background: #cccccc;
+}
+
+.content-box {
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    margin: 50px 5%;
+    padding: 50px 30px;
+}
+
+.essential::after {
+    content: '*';
+    color: #e6002d;
+}
+
+hr {
+    border-bottom: 1px solid #dddddd;
+    margin: 20px 0;
+}
+
+input {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 3rem;
+    margin: 5px auto;
+    padding-left: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: 1px solid black;
+}
+
+input::placeholder {
+    color: #cccccc;
+}
+
+img {
+    width: 17px;
+    margin-right: 10px;
+}
+
+ul,
+ol,
+li {
+    list-style-type: none;
+}
+
+
+/* 링크 기본값 */
+
+article a,
+article a:link,
+article a:visited,
+article a:hover,
+article a:active,
+article a:focus {
+    text-decoration: none;
+    color: #747474;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+/*mobile*/
+
+/* login 로그인 */
+
+.login .login_box .login_wrap ul{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.login .login_box .login_wrap ul li p{
+    width: 120px;
+    margin: 10px 20px;
+    padding: 16px 10px;
+    text-align: center;
+    border: 1px solid silver;
+    border-radius: 10px;
+}
+
+.login_tab_btn > li.login_active p{
+    background-color: #363636;
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+}
+
+.login_tab_container{
+    width: 100%; 
+    height: 480px;
+    overflow: hidden;
+}
+  
+.login_tab_container > div{
+    width: 100%; 
+    height: 480px;
+}
+
+.login .login_content>:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+
+.login .login_content>:nth-child(2) label input {
+    width: 20px;
+}
+
+.login .login_content>:nth-child(2) div>:nth-child(1)::after, .login .login_content>:nth-child(2) div>:nth-child(2)::after{
+    content: ' ❘';
+}
+
+.login .login_content>:nth-child(3) :nth-child(1){
+    width: 100%;
+}
+
+/* join-us 회원가입 */
+
+.join-us .content-box {
+    position: relative;
+}
+
+.join-us .content-box p {
+    margin-top: 30px;
+}
+
+.join-us .content-box>:nth-child(3),
+.join-us .content-box>:nth-child(5),
+.join-us .content-box>:nth-child(7),
+.join-us .content-box>:nth-child(15) {
+    display: flex;
+}
+
+.join-us .content-box>:nth-child(3) input,
+.join-us .content-box>:nth-child(7) input,
+.join-us .content-box>:nth-child(5) input{
+    width: 73%;
+    margin-right: 2%;
+}
+
+.join-us .content-box>:nth-child(7) button {
+    width: 25%;
+}
+
+.join-us .content-box>:nth-child(15) input {
+    width: 61%;
+    margin-right: 2%;
+}
+
+.join-us .content-box>:nth-child(15) button {
+    width: 37%;
+}
+
+.join-us .content-box img {
+    position: absolute;
+    width: 30px;
+    right: 30px;
+    top: 893px;
+}
+
+.join-us .content-box>:nth-child(17):hover {
+    background: #eeeeee;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.join-us .content-box .birth div {
+    display: flex;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    line-height: 3rem;
+    margin: 5px auto;
+    padding-left: 20px;
+}
+
+.join-us .content-box .agree1 input, .join-us .content-box .agree2 input {
+    width: 20px;
+}
+
+.join-us .content-box .agree2 h5 {
+    margin-top: 20px;
+}
+
+.join-us .content-box .agree2 .checkbox_group2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 5px;
+    border: 1px solid silver;
+}
+
+.join-us .content-box .agree2 button {
+    width: 100%;
+}
+
+.join-us>:nth-child(4)>:nth-child(2) {
+    height: 300px;
+    border: 1px solid #ddd;
+    overflow-y: scroll;
+    background: #eeeeee;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+.join-us>:nth-child(4)>:nth-child(3) {
+    margin: 20px;
+    font-size: 0.85rem;
+}
+
+.join-us>:nth-child(4) button{
+    width: 100%;
+}
+
+.join-us>:nth-child(5) {
+    text-align: center;
+}
+
+.join-us>:nth-child(5) button {
+    width: 45%;
+}
+
+/* Remove Account */
+
+.remov-acc {
+    text-align: center;
+}
+
+.remov-acc>:nth-child(2) img {
+    width: 40px;
+    margin-right: 0;
+    margin-bottom: 30px;
+}
+
+.remov-acc>:nth-child(2) button {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.remov-acc>:nth-child(3) p {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.remov-acc>:nth-child(3) select {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.remov-acc>:nth-child(3) textarea {
+    width: 100%;
+    height: 200px;
+    resize: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.remov-acc>:nth-child(3) button {
+    width: 100%;
+}
+
+.remov-acc>:nth-child(4) img {
+    width: 40px;
+    margin-right: 0;
+    margin-bottom: 30px;
+}
+
+.remov-acc>:nth-child(4) button {
+    width: 100%;
+}
+
+.top-fix {
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    z-index: 10;
+}
+
+.top-fix button {
+    background: #222222;
+    color: white;
+    border-radius: 50%;
+    width: 45px;
+}
+
+@media screen and (min-width: 1366px) {
+  .content-box{
+    width:600px;
+    margin: 70px auto;
+  }
+}

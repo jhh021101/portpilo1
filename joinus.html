@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ko">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+  <title>juhnhui</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="membership.css">
+  <link rel="stylesheet" href="footer.css">
+  <style type="text/css"></style>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript"></script>
+
+  <!-- 주소 스크립트 -->
+  <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div w3-include-html="header.html"></div>
+
+<article class="join-us">
+    <h1>Join Us</h1>
+    <h2>회원님의 개인정보를 입력해주시기 바랍니다.</h2>
+
+    <div class="content-box">
+      <h3>회원정보 입력</h3>
+
+      <p class="essential">한글명</p>
+      <label>
+        <input type="text" placeholder="홍">
+        <input type="text" placeholder="길동">
+      </label>
+
+      <p class="essential">영문명</p>
+      <label>
+        <input type="text" placeholder="HONG">
+        <input type="text" placeholder="GILDONG">
+      </label>
+
+      <p class="essential">아이디</p>
+      <div>
+        <input type="text" placeholder="6~15자리 영문+숫자">
+        <button class="black-btn">중복확인</button>
+      </div>
+
+      <p class="essential">비밀번호</p>
+      <label>
+        <input type="password" placeholder="영문+숫자+특수문자 8~20자리">
+      </label>
+
+      <p class="essential">비밀번호 확인</p>
+      <label>
+        <input type="password" placeholder="영문+숫자+특수문자 8~20자리">
+      </label>
+
+      <p class="essential">이메일</p>
+      <label>
+        <input type="email" placeholder="이메일을 입력해주세요">
+      </label>
+
+      <p class="essential">휴대전화</p>
+      <div>
+        <input type="tel" placeholder="010-1234-5678">
+        <button class="black-btn">인증번호 받기</button>
+      </div>
+
+      <p>주소</p>
+      <input onclick="openZipSearch()" type="text" name="addr1" placeholder="도로명, 지번, 건물명 검색" readonly />
+      <img src="https://cdn-icons-png.flaticon.com/512/158/158740.png" />
+      <input type="text" name="addr1" placeholder="상세주소" readonly />
+      <script>
+        function openZipSearch() {
+          new daum.Postcode({
+            oncomplete: function(data) {
+              $('[name=zip]').val(data.zonecode); // 우편번호 (5자리)
+              $('[name=addr1]').val(data.address);
+              $('[name=addr2]').val(data.buildingName);
+            }
+          }).open();
+        }
+      </script>
+
+      <div class="birth">
+        <p>생년월일</p>
+        <input type="text" placeholder="YYYY-MM-DD">
+      </div>
+
+      <div class="agree1">
+
+        <p class="essential">뉴스레터 및 상품정보, 이벤트 등 수신 (선택)</p>
+
+        <div class="checkbox_group">
+
+          <input type="checkbox" id="check_1">
+          <label for="check_all">이메일</label>
+
+          <input type="checkbox" id="check_1">
+          <label for="check_all">SMS</label>
+
+        </div>  
+
+      </div>
+
+      <div class="agree2">
+
+        <h5>패밀리사이트 가입 (선택)</h5>
+
+        <div class="checkbox_group2">
+            <div>
+                <input type="checkbox" id="check_1" class="normal"><label for="check_1">아시아나 인터넷 면세점 가입</label>
+            </div>
+        </div>
+
+        <button class="red-btn">가입하기</button>
+
+      </div>
+
+    </div>
+
+    <div class="content-box">
+      <h3>이용약관</h3>
+      <div>
+        1. 아시아나클럽 회원이 되기 위해서는 소정의 가입신청서를 작성 및 제출하셔야 합니다.<br>2.본 프로그램이 제한을 받지 않는 국가에 거주하시면 누구라도 가입 가능합니다. (단, 만 12세 미만의 어린이는 매직마일즈 회원으로 가입됩니다.)<br>3. 마일리지 적립은 회원 가입일 이후에 탑승 또는 이용하신 경우에만 가능합니다.
+        <br>4. 아시아나클럽 회원 자격은 개별 1인에게만 주어지며 양도할 수 없습니다. 또한, 마일리지 적립, 마일리지 사용 등 회원 혜택은 회원 가입일로부터 회원 본인에게만 제공됩니다.<br>5. 아시아나클럽 마일리지는 본인 사용 원칙입니다. 단, 아시아나항공이 정한 범위 내에서 가족합산 제도를 이용하여 등록된 가족회원간에 양도 또는 부족한 마일리지만큼 합산하여 사용하실 수 있습니다.
+        <br>6. ① 2008년 10월 1일부터 항공 탑승 또는 마일리지 적립 시점의 회원 자격에 따라, 
+        매직마일즈 및 실버, 골드 회원 자격으로 적립한 마일리지는10년째 되는 해의 12월 31일까지, 다이아몬드 이상 우수회원 자격으로 적립한 마일리지는 12년째 되는 해의 12월 31일까지 유효하며, 유효기간 내에 사용되지 않은 마일리지는 소멸됩니다. 단, 2008년 9월 30일까지 적립된 마일리지는 유효기간이 적용되지 않습니다. 아시아나항공 또는 제휴 항공사를 탑승한 마일리지는 탑승일로부터, 
+        제휴사를 포함한 기타 마일리지는 회원 계좌에 적립된 날로부터 유효기간이 적용됩니다. ② 제1항에도 불구하고 항공여객운송 공급의 중단, 현저한 감소 등으로 전체 회원들의 마일리지 항공권 발급 또는 좌석 승급을 위한 마일리지 사용이 불가능하거나 현저히 제한되는 경우 아시아나항공은 사전에 홈페이지에 공지하고 회원님들에게 개별 고지 후 마일리지 유효기간을 연장할 수 있습니다. 
+      </div>
+      <div>
+        위 내용을 숙지했으며 약관에 동의합니다.
+      </div>
+      <div>
+        <button class="red-btn">동의하기</button>
+        <button class="white-btn">취소</button>
+      </div>
+    </div>
+
+    <div class="content-box">
+      <h3>가입 완료</h3>
+      <h2>아시아나항공 가입을 환영합니다.</h2>
+      <hr />
+      <div>
+        <button class="black-btn">홈으로 가기</button>
+        <button class="red-btn">로그인하러 가기</button>
+      </div>
+    </div>
+
+  </article>
+
+  <div w3-include-html="footer.html"></div>
+</body>
+
+<script>
+    includeHTML();
+</script>
+
+</html>

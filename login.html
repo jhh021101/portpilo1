@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+  <title>juhnhui</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="membership.css">
+  <link rel="stylesheet" href="footer.css">
+  <style type="text/css"></style>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript"></script>
+
+  <!-- 주소 스크립트 -->
+  <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div w3-include-html="header.html"></div>
+
+    <article class="login">
+        <h1>Login</h1>
+        <h2>아시아나와 함께 여행을 즐겨보세요.</h2>
+        <div class="login_box content-box">
+            <div class="login_wrap">
+                <!--tab 버튼-->
+                <ul class="login_tab_btn">
+                  <li class="login_active"><a href="#login01">
+                    <p>
+                      <span>아이디 로그인</span>
+                    </p>
+                  </a></li>
+                  
+                  <li><a href="#login02">
+                    <p>
+                      <span>회원번호 로그인</span>
+                    </p>
+                  </a></li>
+                </ul>
+            </div>
+    
+            <!--tab 내용-->
+            <div class="login_tab_container">
+                <div class="login_content" id="login01">
+                    <div>
+                        <input type="text" id="id" placeholder="아이디를 입력해주세요.">
+                        <input type="text" id="pw" placeholder="비밀번호를 입력해주세요.">
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox">아이디 저장
+                        </label>
+                       <div>
+                        <a href="#">아이디 찾기</a>
+                        <a href="#">비밀번호 찾기</a>
+                        <a href="#">회원번호 찾기</a>
+                       </div>
+                    </div>
+                    <div>
+                        <button class="red-btn">로그인</button>
+                        <button class="white-btn">회원가입</button>
+                    </div>
+                    <div>
+                        <p>간편 로그인</p>
+                        <button class="white-btn"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111466.png" alt="카카오톡 로그인">카카오톡 로그인</button>
+                        <button class="white-btn"><img src="https://blog.kakaocdn.net/dn/UGS0q/btree5Viurw/l07AH1VgWJHm4stsAHLdL0/img.png" alt="페이스북 로그인">페이스북 로그인</button>
+                        <button class="white-btn"><img src="https://littledeep.com/wp-content/uploads/2020/09/naver-icon-style.png" alt="네이버 로그인">네이버 로그인</button>
+                    </div>
+                </div>
+    
+                <div class="login_content" id="login02">
+                    <div>
+                        <input type="text" id="id" placeholder="회원번호를 입력해주세요.">
+                        <input type="text" id="pw" placeholder="비밀번호를 입력해주세요.">
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox">회원번호 저장
+                        </label>
+                        <div>
+                            <a href="#">아이디 찾기</a>
+                            <a href="#">비밀번호 찾기</a>
+                            <a href="#">회원번호 찾기</a>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="red-btn">로그인</button>
+                        <button class="white-btn">회원가입</button>
+                    </div>
+                    <div>
+                        <p>간편 로그인</p>
+                        <button class="white-btn"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111466.png" alt="카카오톡 로그인">카카오톡 로그인</button>
+                        <button class="white-btn"><img src="https://blog.kakaocdn.net/dn/UGS0q/btree5Viurw/l07AH1VgWJHm4stsAHLdL0/img.png" alt="페이스북 로그인">페이스북 로그인</button>
+                        <button class="white-btn"><img src="https://littledeep.com/wp-content/uploads/2020/09/naver-icon-style.png" alt="네이버 로그인">네이버 로그인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </article>
+
+      <div w3-include-html="footer.html"></div>
+
+</body>
+
+<script>
+    includeHTML();
+</script>
+
+</html>

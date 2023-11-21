@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+  <title>juhnhui</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="membership.css">
+  <link rel="stylesheet" href="footer.css">
+  <style type="text/css"></style>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript"></script>
+
+  <!-- 주소 스크립트 -->
+  <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<div w3-include-html="header.html"></div>
+
+<article class="remov-acc">
+  <h1>Remove Account</h1>
+  <div class="content-box">
+    <h3>회원탈퇴</h3>
+    <img src="https://cdn-icons-png.flaticon.com/512/2001/2001386.png" />
+    <h4>
+      정말로 탈퇴하시겠습니까?
+    </h4>
+    <div>
+      탈퇴 시 이용내역이 삭제되며<br>서비스 이용이 제한됩니다.<br>또한 삭제된 계정은 복구되지 않습니다.
+    </div>
+    <div>
+      <button class="gray-btn">탈퇴하기</button>
+    </div>
+  </div>
+
+  <div class="content-box">
+    <h3>설문조사</h3>
+    <h4>불편했던 점, 개선할 점을 공유해주시면<br>더 나은 서비스를 위해 반영하도록 하겠습니다.</h4>
+    <p>탈퇴 사유</p>
+    <select>
+      <option value="default">선택해주세요.</option>
+      <option value="del-data">기록을 삭제하기 위하여</option>
+      <option value="not-easy">이용에 불편함과 장애가 많아서</option>
+      <option value="worse">다른 사이트가 더 좋아서</option>
+      <option value="contents">콘텐츠에 불만족</option>
+      <option value="no-func">원하는 기능이 없어서</option>
+      <option value="not-use">더 이상 필요가 없어져서</option>
+      <option value="hate">사이트의 방향성이 가치관과 맞지 않아서</option>
+      <option value="etc">기타</option>
+    </select>
+
+    <p>건의사항</p>
+
+    <textarea placeholder="소중한 의견 귀담아 듣겠습니다."></textarea>
+
+    <button class="red-btn">제출하기</button>
+  </div>
+
+  <div class="content-box">
+    <h3>탈퇴 완료</h3>
+    <img src="https://cdn-icons-png.flaticon.com/512/2001/2001386.png" />
+    <h2>정상적으로 탈퇴 처리 되었습니다.</h2>
+    <p>그 동안 이용해주셔서 감사합니다.</p>
+    <button class="red-btn">홈으로</button>
+  </div>
+</article>
+
+  <div w3-include-html="footer.html"></div>
+</body>
+
+<script>
+    includeHTML();
+</script>
+
+</html>

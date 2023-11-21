@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="ko">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+  <title>junghunhui</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="purchase.css">
+  <link rel="stylesheet" href="footer.css">
+  <style type="text/css"></style>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mb.YTPlayer/3.3.1/css/jquery.mb.YTPlayer.min.css">
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+   <!-- scrollTrigger -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollTrigger.min.js"></script>
+
+   <!-- scrollTo -->
+   <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/ScrollToPlugin.min.js"></script>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+  <!-- 날짜 달력 스크립트 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ko.js"></script>
+
+</head>
+
+
+
+<body>
+
+    <div w3-include-html="header.html"></div>
+
+    <article class="ticket">
+        <div class="ticket_box">
+            <div class="ticket_wrap">
+                <!--tab 버튼-->
+                <ul class="ticket_tab_btn">
+                  <li class="ticket_active"><a href="#ticket01">
+                    <p>
+                      <span>왕복</span>
+                    </p>
+                  </a></li>
+                  
+                  <li><a href="#ticket02">
+                    <p>
+                      <span>편도</span>
+                    </p>
+                  </a></li>
+                </ul>
+                
+                <!--tab 내용-->
+            </div>
+            <div class="ticket_tab_container">
+                <div class="ticket_content" id="ticket01">
+                    <div class="ticket_list_box1">
+                        <div>
+                          <h4>INC</h4>
+                          <h5>출발지</h5>
+                        </div>
+                        <div class="ticket_mg">
+                          <img src="https://www.koreanair.com/booking__swap--disabled.svg">
+                        </div>
+                        <div>
+                          <h4>YNC</h4>
+                          <h5>도착지</h5>
+                        </div>
+                    </div>
+                    <div class="ticket_date1"> 
+                       <div>
+                        <p>날짜</p>
+                        <input class="dateSelector" placeholder="가는날 ~ 오는날" />
+                       </div>
+                    </div>
+                    <div class="ticket_datea"> 
+                        <div>
+                         <p class="popupopen">탑승객</p>
+                         <!-- 성인<a href="" id='result'>0</a>명 -->
+                        </div>
+                    </div>
+                    <div class="ticket_dateb"> 
+                        <div>
+                         <p>좌석</p>
+                         <select>
+                            <option value="prs">좌석 등급 선택</option>
+                            <option value="prs">일반석</option>
+                            <option value="prs">프레스티지석</option>
+                            <option value="prs">일등석</option>
+                         </select>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="ticket_content" id="ticket02">
+                    <div class="ticket_list_box2">
+                        <div>
+                          <h4>INC</h4>
+                          <h5>출발지</h5>
+                        </div>
+                        <div class="ticket_mg">
+                          <img src="https://www.koreanair.com/booking__swap--disabled.svg">
+                        </div>
+                        <div>
+                          <h4>YNC</h4>
+                          <h5>도착지</h5>
+                        </div>
+                    </div>
+                    <div class="ticket_date2"> 
+                        <div>
+                         <p>날짜</p>
+                         <input class="dateSelector" placeholder="가는날" />
+                        </div>
+                    </div>
+                     <div class="ticket_datea"> 
+                         <div>
+                          <p class="popupopen">탑승객</p>
+                          성인<a href="" id='result'>0</a>명
+                         </div>
+                     </div>
+                     <div class="ticket_dateb"> 
+                         <div>
+                          <p>좌석</p>
+                          <select>
+                             <option value="prs">좌석 등급 선택</option>
+                             <option value="prs">일반석</option>
+                             <option value="prs">프레스티지석</option>
+                             <option value="prs">일등석</option>
+                          </select>
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+      </article>
+
+    <article class="ticket_reserve">
+
+        <div class="reserve_box1">
+            <div>
+                <span>ICN</span>
+                <img src="https://www.koreanair.com/flight-widget__swap.svg">
+                <span>LAX</span>
+            </div>
+        </div>
+
+        <div class="reserve_box2">
+            <div>
+                <span>01</span>
+                <span>02 항공편</span>
+                <span>03</span>
+            </div>
+            <div>
+                <h5>가는편</h5>
+                <div>
+                    <p>ICN</p>
+                    <img src="https://flyasiana.com/C/pc/image/common/bg_flight_title_mid.png">
+                    <p>LAX</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reserve_box3">
+            <ul class="tab_button">
+                <li class="on"><a href="#;">11.14 (화)</a>
+                    <span>KRW</span>
+                    <span> 843,400</span>
+                </li>
+                <li><a href="#;">11.15 (수)</a>
+                    <span>KRW</span>
+                    <span>775,900</span>
+                </li>
+                <li><a href="#;">11.16 (목)</a>
+                    <span>KRW</span>
+                    <span>775,900</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="tab_area">
+                <ul class="tab_button">
+                    <li class="on"><a href="#;">이코노미 특가</a></li>
+                    <li><a href="#;">이코노미 일반</a></li>
+                    <li><a href="#;">비즈니스</a></li>
+                </ul>
+                <div class="tab_cont on">
+                    <div>
+                        <div>
+                            <P>20:40</P>
+                            <P>터미널 1</P>
+                        </div>
+                        <div>
+                            <span>11시간10분</span>
+                            <img src="https://flyasiana.com/C/pc/image/common/bg_fligth_direct.png">
+                            <span>직항</span>
+                        </div>
+                        <div>
+                            <P>14:50</P>
+                            <P>터미널 B</P>
+                        </div>
+                    </div>
+                    <div>
+                        <h5>이코노미</h5>
+                        <P>6석</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </article>
+
+    <article class="ticket_reserve2">
+
+        <div class="reserve_box1">
+            <div>
+                <span>ICN</span>
+                <img src="https://www.koreanair.com/flight-widget__swap.svg">
+                <span>LAX</span>
+            </div>
+        </div>
+
+        <div class="reserve_box2">
+            <div>
+                <h5>오는편</h5>
+                <div>
+                    <p>LAX</p>
+                    <img src="https://flyasiana.com/C/pc/image/common/bg_flight_title_mid.png">
+                    <p>ICN</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reserve_box3">
+            <ul class="tab_button">
+                <li class="on"><a href="#;">11.17 (금)</a>
+                    <span>KRW</span>
+                    <span>1,470,100</span>
+                </li>
+                <li><a href="#;">11.18 (토)</a>
+                    <span>KRW</span>
+                    <span>1,645,100</span>
+                </li>
+                <li><a href="#;">11.19 (일)</a>
+                    <span>KRW</span>
+                    <span>962,600</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="tab_area">
+                <ul class="tab_button">
+                    <li class="on"><a href="#;">이코노미 특가</a></li>
+                    <li><a href="#;">이코노미 일반</a></li>
+                    <li><a href="#;">비즈니스</a></li>
+                </ul>
+                <div class="tab_cont on">
+                    <div>
+                        <div>
+                            <P>20:40</P>
+                            <P>터미널 1</P>
+                        </div>
+                        <div>
+                            <span>11시간10분</span>
+                            <img src="https://flyasiana.com/C/pc/image/common/bg_fligth_direct.png">
+                            <span>직항</span>
+                        </div>
+                        <div>
+                            <P>14:50</P>
+                            <P>터미널 B</P>
+                        </div>
+                    </div>
+                    <div>
+                        <h5>이코노미</h5>
+                        <P>6석</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </article>
+
+    <script>
+        $(document).ready(function () {
+          $(".tab_button > li").click(function () {
+            var idx = $(this).index();
+      
+            $(this).addClass("on").siblings().removeClass("on");
+      
+            $(".tab_area .tab_cont")
+              .eq(idx)
+              .addClass("on")
+              .siblings(".tab_cont")
+              .removeClass("on");
+          });
+        });
+    </script> 
+
+    <article class="itinerary">
+
+        <div>
+            <span>01</span>
+            <span>02</span>
+            <span>03 결제</span>
+        </div>
+
+        <h3>여정 정보</h3>
+        
+        <div class="itinerary_box">
+            <div class="itinerary_box_list">
+                <div>
+                    <h4>첫 번째 여정</h4>
+                </div>
+                <div>
+                    <h5>서울 / 인천</h5>
+                    <img src="https://flyasiana.com/C/pc/image/common/bg_fligth_direct.png">
+                    <h5>로스앤젤레스</h5>
+                </div>
+                <div>
+                    <div>
+                        <P>2023.11.14(화) 20:40 ~ 2023.11.14(화) 14:50</P>
+                    </div>
+                    <div>
+                        <P>OZ204</P>
+                        <P>이코노미(K)</P>
+                    </div>
+                </div>
+            </div>
+            <div class="itinerary_box_list">
+                <div>
+                    <h4>두 번째 여정</h4>
+                </div>
+                <div>
+                    <h5>로스앤젤레스</h5>
+                    <img src="https://flyasiana.com/C/pc/image/common/bg_fligth_direct.png">
+                    <h5>서울 / 인천</h5>
+                </div>
+                <div>
+                    <div>
+                        <P>2023.11.17(금) 11:00 ~ 2023.11.18(토) 17:30</P>
+                    </div>
+                    <div>
+                        <P>OZ201</P>
+                        <P>이코노미(M)</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article class="passenger">
+        <div>
+            <h3>승객 정보</h3>
+            <p>임신 32주 이상의 임신부 고객은 탑승이 제한될 수 있으니 사전에 확인하시기 바랍니다. (37주 이상은 탑승불가)</p>
+            <span> 빨간 동그라미는 필수 입력 사항입니다.</span>
+        </div>
+
+        <div class="passenger_box1">
+            <div>
+                <h5>성인 1</h5>
+            </div>
+            <div>
+                <div>
+                    <label class="passenger_list">승객 성</label>
+                    <input type="text" placeholder="예) KIM">
+                </div>
+                <div>
+                    <label class="passenger_list">승객 이름</label>
+                    <input type="text" placeholder="예) MINJI">
+                </div>
+                <div>
+                    <label class="passenger_list">성별</label>
+                    <div class="passenger_list2">
+                        <input type="button" value="남성">
+                        <input type="button" value="여성">
+                    </div>
+                </div>
+                <div>
+                    <label class="passenger_list">생년월일(YYYY.MM.DD)</label>
+                    <input type="text" placeholder="">
+                </div>
+                <div>
+                    <label class="passenger_list">회원번호</label>
+                    <input type="text" placeholder="항공사 회원번호를 입력하여 주십시오.">
+                </div>
+            </div>
+        </div>
+
+        <div class="passenger_box2">
+            <div>
+                <h5>연락처 정보</h5>
+            </div>
+            <div>
+                <div>
+                    <label class="passenger_list">연락처</label>
+                    <div class="passenger_list1">
+                      <select>
+                        <option>선택</option>
+                        <option>집</option>
+                        <option>휴대폰</option>
+                        <option>회사</option>
+                      </select>
+                    </div>
+                </div>
+                <div>
+                    <label class="passenger_list">국가번호</label>
+                    <div class="passenger_list1">
+                        <input type="button" value="국가번호">
+                        <input type="text">
+                    </div>
+                </div>
+                <div>
+                    <label class="passenger_list">전화번호</label>
+                    <input type="tel" placeholder="예. 01012345678">
+                </div>
+                <div>
+                    <label class="passenger_list">이메일</label>
+                    <input type="email" placeholder="예. asiana@asiana.com">
+                </div>
+                <div> 
+                    <label>언어 선택</label>
+                    <div class="passenger_list1">
+                      <select>
+                        <option>한국어</option>
+                        <option>영어</option>
+                        <option>일본어</option>
+                        <option>중국어</option>
+                      </select>
+                    </div>
+                </div>
+                <div class="passenger_list1">
+                    <input type="checkbox">
+                    <label>[필수] 예약 여정의 정보를 이메일과 SMS로 수신하는 것에 동의합니다.</label>
+                </div>
+                <div>
+                    <div>
+                        <h5>비회원 비밀번호 등록</h5>
+                        <P>비밀번호는 홈페이지나 모바일에서 예약 변경 및 취소할 경우 필요합니다.</P>
+                    </div>
+                    <div>
+                        <div>
+                            <label class="passenger_list">비밀번호</label>
+                            <input type="password" placeholder="숫자 4자리">
+                        </div>
+                        <div>
+                            <label class="passenger_list">비밀번호</label>
+                            <input type="password" placeholder="숫자 4자리">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <button>탑승자 입력 완료</button>
+        </div>
+
+        <div>
+            <h5>총 결제금액</h5>
+            <div>
+                <span>KRW</span>
+                <span>2,313,500</span>
+            </div>
+            <button>결제하기</button>
+        </div>
+
+    </article>
+
+    <div w3-include-html="footer.html"></div>
+
+</body>
+
+<script>
+    includeHTML();
+</script>
+
+</html>

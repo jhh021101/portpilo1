@@ -1,0 +1,738 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  word-break: keep-all;
+  outline: 0px solid silver;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  max-width: 1200px;
+  margin: auto;
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1rem;
+  letter-spacing: 0.1px;
+  color: black;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  transition: all 0.3s;
+  color: black;
+  cursor: pointer;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+  
+a:visited {
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+ul {
+  padding: 10px 10px;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+}
+
+h3 {
+  font-size: 2.3rem;
+  line-height: 2.3rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+}
+
+h5 {
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    align-items: center;
+}
+
+.bodyfixed {
+    overflow-y: hidden;
+}
+
+footer {
+  width: 100%;
+  margin: auto;
+  margin-top: 10%;
+  max-width: 1300px;
+}
+
+article {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 40px 30px;
+}
+
+button {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: none;
+  margin: 10px 10px;
+  padding: 10px 20px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  border: 1px solid white;
+}
+
+/* mobile start */
+
+/* ticket 항공권 예매 */
+
+.ticket {
+  background-color: #e1e1e1;
+  display: block;
+  padding: 40px 30px;
+}
+
+.ticket> div {
+  margin: auto;
+  padding: 16px 30px;
+}
+
+.ticket_box div> h3 {
+  padding: 16px 10px;
+  font-size: 2.3rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.ticket_box {
+  background-color: white;
+  margin-top: 50px;
+  padding: 16px 30px;
+  border-radius: 15px;
+  color:  #242424;
+}
+
+.ticket_box li {
+  list-style: none;
+  margin: auto;
+}
+
+.ticket_wrap ul {
+  display: flex;
+  padding: 16px 30px;
+  border-bottom: 1px solid #4d4c4c;
+}
+
+.ticket_wrap ul p {
+  width: 60px;
+  padding: 14px 16px;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 20px;
+  color: #4d4c4c;
+}
+
+.ticket_wrap ul :nth-child(3) span{
+  position: relative;
+  right: 8px;
+}
+
+.ticket_tab_btn > li.ticket_active{
+  position: relative;
+}
+
+.ticket_tab_btn > li.ticket_active p{
+  background-color: #4d4c4c;
+  color: white;
+}
+
+.ticket_tab_container{
+  width: 100%; 
+  height: 380px;
+  overflow: hidden;
+}
+
+.ticket_tab_container > div{
+  width: 100%; 
+  height: 380px;
+  padding: 16px 10px;
+}
+
+.ticket_list_box1 {
+  display: flex;
+  padding: 16px 30px;
+  justify-content: space-around;
+}
+
+.ticket_list_box1 div {
+  padding: 8px 20px;
+  text-align: center;
+}
+
+.ticket_list_box1 div h4 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.ticket_list_box1 div h5 {
+  font-weight: 100;
+}
+
+.ticket_date1 {
+  padding: 16px 20px;
+}
+
+.ticket_date1 div {
+  background: #ececec;
+  padding: 16px 20px;
+  border-radius: 15px;
+}
+
+.ticket_date1 input {
+  background: #ececec;
+  border: none;
+  text-align: right;
+}
+
+.ticket_mg img {
+  position: relative;
+  top: 2px;
+  width: 36px;
+}
+
+.ticket_list_box2 {
+  display: flex;
+  padding: 16px 30px;
+  justify-content: space-around;
+}
+
+.ticket_list_box2 div {
+  padding: 8px 20px;
+  text-align: center;
+}
+
+.ticket_list_box2 div h4 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.ticket_list_box2 div h5 {
+  font-weight: 100;
+}
+
+.ticket_date2 {
+  padding: 16px 20px;
+}
+
+.ticket_date2 div {
+  background: #ececec;
+  padding: 16px 20px;
+  border-radius: 15px;
+}
+
+.ticket_date2 input {
+  background: #ececec;
+  border: none;
+  text-align: right;
+}
+
+.ticket_datea {
+  padding: 16px 20px;
+}
+
+.ticket_datea div {
+  background: #ececec;
+  padding: 16px 20px;
+  border-radius: 15px;
+}
+
+.ticket_datea input {
+  background: #ececec;
+  border: none;
+  text-align: center;
+}
+
+.ticket_dateb {
+  padding: 16px 20px;
+}
+
+.ticket_dateb div {
+  background: #ececec;
+  padding: 16px 20px;
+  border-radius: 15px;
+}
+
+.ticket_dateb select {
+  background: #ececec;
+  border: none;
+  text-align: center;
+}
+
+/* ticket_reserve 항공편 예약 */
+
+.ticket_reserve {
+  height: 720px;
+}
+
+.reserve_box1 {
+  margin-top: 20px;
+  border: 1px solid #242424;
+  border-radius: 15px;
+}
+
+.reserve_box1 div{
+  display: flex;
+  justify-content: center;
+}
+
+.reserve_box1 div span {
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.reserve_box1 div img {
+  width: 50px;
+  padding: 5px 5px;
+}
+
+.reserve_box2 {
+  margin-top: 20px;
+}
+
+.reserve_box2> :nth-child(1) {
+  display: flex;
+  justify-content: center;
+}
+
+.ticket_reserve .reserve_box2 :nth-child(1) span {
+  margin: auto;
+  padding: 10px 10px;
+}
+
+.ticket_reserve .reserve_box2 :nth-child(1) :nth-child(2) {
+  border-bottom: 1px solid brown;
+  color: brown;
+}
+
+.reserve_box2> :nth-child(2) {
+  display: flex;
+  margin-top: 20px;
+  padding: 10px 0px;
+  border-bottom: 1px solid #242424;
+}
+
+.reserve_box2> :nth-child(2) h5 {
+  padding: 5px 30px;
+  font-size: 1.2rem;
+}
+
+.reserve_box2> :nth-child(2) div {
+  display: flex;
+  margin-left: 10px;
+}
+
+.reserve_box2> :nth-child(2) div p {
+  margin: auto;
+  font-size: 0.9rem;
+}
+
+.reserve_box2> :nth-child(2) div img {
+  height: 20px;
+  margin: 5px 10px;
+}
+
+.reserve_box3 .tab_button li{
+  background: white;
+}
+
+.ticket_reserve2 {
+  height: 720px;
+}
+
+.ticket_reserve2 .reserve_box2> div{
+  display: flex;
+  margin-top: 20px;
+  padding: 10px 0px;
+  border-bottom: 1px solid #242424;
+}
+
+.ticket_reserve2 .reserve_box2> div h5 {
+  padding: 5px 30px;
+  font-size: 1.2rem;
+}
+
+.ticket_reserve2 .reserve_box2> div div {
+  display: flex;
+  margin-left: 10px;
+}
+
+.ticket_reserve2 .reserve_box2> div div p {
+  margin: auto;
+  font-size: 0.9rem;
+}
+
+.ticket_reserve2 .reserve_box2> div div img {
+  height: 20px;
+  margin: 5px 10px;
+}
+
+.container {
+  background: #ececec;
+}
+
+.container .tab_button li{
+  background: #d3d2d2;
+  margin: 0px 5px;
+  border-radius: 20px;
+}
+
+.container .tab_button li.on {
+  background: #b1adad;
+}
+
+.container .tab_cont {
+  border-radius: 15px;
+  box-shadow: 3px 3px 8px 3px rgba(188, 188, 188, 0.565);
+}
+
+.container .tab_cont> :nth-child(1) {
+  display: flex;
+}
+
+.container .tab_cont> :nth-child(1)> :nth-child(1) :nth-child(1) {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.container .tab_cont> :nth-child(1)> :nth-child(3) :nth-child(1) {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.container .tab_cont> :nth-child(1)> :nth-child(2) {
+  margin: auto;
+}
+
+.container .tab_cont> :nth-child(2) {
+  border: 1px solid #5f5f5f;
+  border-radius: 15px;
+  box-shadow: 3px 3px 8px 3px rgba(188, 188, 188, 0.565);
+}
+
+
+/*탭영역*/
+
+.container {
+  background: #f0f0f0;
+}
+.tab_area {
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 0;
+}
+
+/*탭메뉴 버튼*/
+.tab_button {
+  display: flex;
+  justify-content: space-between;
+}
+.tab_button li {
+  float: left;
+  width: 49.5%;
+  background: #ececec;
+  border-radius: 10px 10px 0 0;
+}
+.tab_button li a {
+  padding: 10px 0;
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+}
+.tab_button li.on {
+  background: #ececec;
+  color: #d60815;
+}
+
+/*탭메뉴 콘텐츠*/
+.tab_cont {
+  width: 100%;
+  background: #fff;
+  display: none;
+}
+.tab_cont.on {
+  display: block;
+}
+.tab_cont div {
+  padding: 20px;
+}
+
+/* itinerary 여정 정보 */
+
+.itinerary> :nth-child(1) {
+  display: flex;
+  justify-content: center;
+}
+
+.itinerary> :nth-child(1) span {
+  margin: auto;
+  padding: 10px 10px;
+}
+
+.itinerary> :nth-child(1) :nth-child(3)  { 
+  border-bottom: 1px solid brown;
+  color: brown;
+}
+
+.itinerary h3 {
+  margin-top: 20px;
+  padding: 30px 0px;
+  font-size: 2.2rem;
+}
+
+.itinerary_box {
+  padding: 36px 30px;
+  border: 1px solid #5f5f5f;
+  border-radius: 15px;
+}
+
+.itinerary_box .itinerary_box_list {
+  text-align: left;
+}
+
+.itinerary_box .itinerary_box_list h4 {
+  font-size: 1.2rem;
+}
+
+.itinerary_box .itinerary_box_list h5 {
+  font-size: 1rem;
+}
+
+.itinerary_box .itinerary_box_list> :nth-child(2) {
+  display: flex;
+  margin: 20px 0px;
+  justify-content: center;
+}
+
+.itinerary_box .itinerary_box_list> :nth-child(2) img {
+  width: 100px;
+  height: 10px;
+  margin: 0px 20px
+}
+
+.itinerary_box .itinerary_box_list> :nth-child(3)> :nth-child(2) {
+  display: flex;
+  margin: 10px 0px;
+  margin-bottom: 20px;
+}
+
+.itinerary_box .itinerary_box_list> :nth-child(3)> :nth-child(2) p {
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+
+/* passenger 승객 정보 */
+
+
+.passenger> :nth-child(1) h3 {
+  margin-top: 20px;
+  padding: 10px 0px;
+  font-size: 2.2rem;
+}
+
+.passenger> :nth-child(1) p {
+  padding: 10px 0px;
+}
+
+.passenger> :nth-child(1) span {
+  margin: auto;
+  line-height: 1.4rem;
+  color: #d60815;
+}
+
+.passenger input {
+  border: none;
+  border-bottom: 1px solid #b1adad;
+}
+
+.passenger .passenger_box1 {
+  background: #5f5f5f;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  border: 1px solid #b1adad;
+  border-radius: 15px
+}
+
+.passenger label {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.passenger label::after {
+  content: "*";
+  margin-left: 5px;
+  color: #d60815;
+}
+
+.passenger .passenger_box1 h5 {
+  padding: 20px 0px;
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: #fff;
+}
+
+.passenger .passenger_box1> :nth-child(2) {
+  background-color: #fff;
+}
+
+.passenger .passenger_box1> :nth-child(2) div {
+  padding: 20px 0px;
+}
+
+.passenger .passenger_box1> :nth-child(2)> :nth-child(3) {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.passenger .passenger_box1> :nth-child(2)> :nth-child(3) label {
+  width: 50px;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.passenger .passenger_box1> :nth-child(2)> :nth-child(3) input{
+  background: none;
+  width: 100px;
+  margin: 0px 10px;
+  border: 1px solid #b1adad;
+  border-radius: 2px;
+}
+
+/* passenger_box2 연락처 정보 */
+
+.passenger .passenger_box2 {
+  background: #5f5f5f;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  border: 2px solid #b1adad;
+  border-radius: 15px
+}
+
+.passenger .passenger_box2 h5 {
+  padding: 20px 0px;
+  font-size: 1.2rem;
+  font-weight: 100;
+  color: #fff;
+}
+
+
+.passenger .passenger_box2> :nth-child(2) {
+  background-color: #fff;
+}
+
+.passenger .passenger_box2> :nth-child(2) div {
+  padding: 20px 0px;
+}
+
+.passenger .passenger_box2> :nth-child(2)> :nth-child(1), .passenger .passenger_box2> :nth-child(2)> :nth-child(2) {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+}
+
+.passenger .passenger_box2> :nth-child(2)> :nth-child(1) select{
+  width: 150px;
+  text-align: center;
+}
+
+.passenger .passenger_box2> :nth-child(2)> :nth-child(2) input{
+  margin: 0;
+}
+
+.passenger button {
+  background: #d60815;
+  color: #fff;
+}
+
+.passenger .passenger_box2> :nth-child(2)> :nth-child(5) {
+  display: flex;
+  height: 60px;
+  justify-content: center;
+}
+
+.passenger .passenger_box2> :nth-child(2)> :nth-child(7) h5 {
+  color: #242424;
+}
+
+.passenger> :nth-child(5) {
+  display: flex;
+  margin-top: 20px;
+  border: 1px solid #b1adad;
+  border-radius: 15px;
+  justify-content: space-between;
+  box-shadow: 3px 3px 8px 3px rgba(188, 188, 188, 0.565);
+}
+
+.passenger> :nth-child(5) h5 {
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.passenger> :nth-child(5) :nth-child(2) {
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+/* laptop start */
+
+@media screen and (min-width: 1366px) {
+    article {
+        margin: auto;
+        max-width: 1000px;
+      } 
+
+}

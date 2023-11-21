@@ -1,0 +1,85 @@
+/* footer */
+
+footer {
+    background-color: #5D5D5D;
+    height: 980px;
+    padding:40px 30px;
+    margin: auto;
+  }
+  
+  footer h5 {
+    padding: 16px 30px;
+    font-weight: 200;
+    color: #ccc;
+  }
+  
+  footer> :nth-child(2) {
+    height: 700px;
+  }
+  
+  footer> :nth-child(2)> :nth-child(1) {
+    background-color: #4D4D4D;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  footer> :nth-child(2)> :nth-child(1)> div {
+    display: flex;
+    margin: auto;
+  }
+  
+  
+  footer> :nth-child(2)> :nth-child(1)> :first-child h5 {
+    width: 100%;
+    background-color: #4D4D4D;
+    border: 1px solid #6D6D6D;
+  }
+  
+  footer> :nth-child(2)> :nth-child(1)> :last-child h5 {
+    width: 100%;
+    background-color: #4D4D4D;
+    border: 1px solid #6D6D6D;
+  }
+  
+  footer> :nth-child(2)> :nth-child(2) {
+      background-color: #4D4D4D;
+      padding: 20px 10px;
+      border: 1px solid #6D6D6D;
+  }
+  
+  footer> :nth-child(2)> :nth-child(2)> h5 {
+      font-size: 0.8rem;
+      font-weight: 400;
+  }
+  
+  footer> :nth-child(2)> :nth-child(2) a {
+    margin-left: 10px;
+    color: #ccc;
+  }
+  
+  footer> :nth-child(2)> :nth-child(2)> :nth-child(1) {
+    padding: 16px 22px;
+  }
+  
+  footer> :nth-child(2)> :nth-child(2)> :nth-child(1) :nth-child(1) {
+    padding-right: 12px;
+    font-weight: bold;
+    border-right: 1px solid #747474;
+  }
+  
+  footer> :nth-child(3) {
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  footer> :nth-child(3)> :nth-child(1) {
+      background: url('https://flyasiana.com/C/pc/image/common/new_logo_skytrax_ko.png') 0 0 no-repeat;
+      background-size: auto 60px;
+      width: 175px;
+      height: 60px;
+      margin-top: 30px;
+  }
+  
+  footer> :nth-child(3)> :nth-child(2) img {
+      width: 130px;
+  }
